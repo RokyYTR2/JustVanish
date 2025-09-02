@@ -23,8 +23,8 @@ messages:
 # =======================
 # Messages shown in the ActionBar when toggling vanish
 actionbar:
-  vanish-on: "&a✔ ʏᴏᴜ ᴀʀᴇ ɴᴏᴡ ɪɴᴠɪꜱɪʙʟᴇ" # ActionBar message when vanish is enabled
-  vanish-off: "&c⚠ ʏᴏᴜ ᴀʀᴇ ɴᴏᴡ ᴠɪꜱɪʙʟᴇ" # ActionBar message when vanish is disabled
+  vanish-on: "&aʏᴏᴜ ᴀʀᴇ ɴᴏᴡ ɪɴᴠɪꜱɪʙʟᴇ" # ActionBar message when vanish is enabled
+  vanish-off: "&cʏᴏᴜ ᴀʀᴇ ɴᴏᴡ ᴠɪꜱɪʙʟᴇ" # ActionBar message when vanish is disabled
 
 # =======================
 # Sounds
