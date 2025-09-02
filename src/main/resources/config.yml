@@ -1,5 +1,8 @@
+prefix: "&x&A&2&8&B&5&9&lᴊ&x&A&4&8&D&5&A&lᴜ&x&A&5&8&E&5&C&lꜱ&x&A&7&9&0&5&D&lᴛ&x&A&9&9&1&5&E&lᴠ&x&A&A&9&3&6&0&lᴀ&x&A&C&9&4&6&1&lɴ&x&A&E&9&6&6&2&lɪ&x&A&F&9&7&6&4&lꜱ&x&B&1&9&9&6&5&lʜ &8» &f"
+
 messages:
-  vanish-on: "&aYou are now invisible."
-  vanish-off: "&aYou are now visible."
-  not-a-player: "&cYou cannot use this command from the console."
-  no-permission: "&cYou do not have permission to use this command."
+  vanish-on: "&aʏᴏᴜ ᴀʀᴇ ɴᴏᴡ ɪɴᴠɪꜱɪʙʟᴇ."
+  vanish-off: "&aʏᴏᴜ ᴀʀᴇ ɴᴏᴡ ᴠɪꜱɪʙʟᴇ."
+  not-a-player: "&cʏᴏᴜ ᴄᴀɴɴᴏᴛ ᴜꜱᴇ ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ꜰʀᴏᴍ ᴛʜᴇ ᴄᴏɴꜱᴏʟᴇ."
+  no-permission: "&cʏᴏᴜ ᴅᴏ ɴᴏᴛ ʜᴀᴠᴇ ᴘᴇʀᴍɪꜱꜱɪᴏɴ ᴛᴏ ᴜꜱᴇ ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ."
+  reload-success: "&aᴄᴏɴꜰɪɢᴜʀᴀᴛɪᴏɴ ᴡᴀꜱ ʀᴇʟᴏᴀᴅᴇᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ!"

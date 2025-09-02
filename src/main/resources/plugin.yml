@@ -10,7 +10,15 @@ commands:
     usage: /vanish
     permission: justvanish.use
     permission-message: &cYou don't have permission to use this command.
+  vanish reload:
+    description: Allows a player to reload justvanish plugin.
+    usage: /vanish reload
+    permission: justvanish.reload
+    permission-message: &cYou don't have permission to use this command.
 permissions:
   justvanish.use:
     description: Allows a player to use the /vanish command.
+    default: op
+  justvanish.reload:
+    description: Allows a player to reload justvanish plugin.
     default: op
