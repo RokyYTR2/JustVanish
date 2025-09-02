@@ -2,8 +2,11 @@ package dev.meyba.justVanish.commands;
 
 import dev.meyba.justVanish.JustVanish;
 import dev.meyba.justVanish.managers.VanishManager;
+import net.md_5.bungee.api.ChatMessageType;
+import net.md_5.bungee.api.chat.TextComponent;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
+import org.bukkit.Sound;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -76,6 +79,18 @@ public class Commands implements CommandExecutor, TabCompleter {
             this.vanishManager.unVanishPlayer(player);
             String msg = this.plugin.getConfig().getString("messages.vanish-off");
             player.sendMessage(prefix + ChatColor.translateAlternateColorCodes('&', msg));
+
+            String msgaction = this.plugin.getConfig().getString("actionbar.vanish-off");
+            player.spigot().sendMessage(ChatMessageType.ACTION_BAR,
+                    TextComponent.fromLegacyText(prefix + ChatColor.translateAlternateColorCodes('&', msgaction)));
+
+            String soundName = this.plugin.getConfig().getString("sounds.vanish-off");
+            try {
+                Sound sound = Sound.valueOf(soundName.toUpperCase());
+                player.playSound(player.getLocation(), sound, 1f, 1f);
+            } catch (IllegalArgumentException e) {
+                plugin.getLogger().warning("Invalid sound name in config: " + soundName);
+            }
         } else {
             String joinMessage = this.plugin.getConfig().getString("messages.leave-message");
             if (joinMessage != null) {
@@ -85,6 +100,18 @@ public class Commands implements CommandExecutor, TabCompleter {
             this.vanishManager.vanishPlayer(player);
             String msg = this.plugin.getConfig().getString("messages.vanish-on");
             player.sendMessage(prefix + ChatColor.translateAlternateColorCodes('&', msg));
+
+            String msgaction = this.plugin.getConfig().getString("actionbar.vanish-on");
+            player.spigot().sendMessage(ChatMessageType.ACTION_BAR,
+                    TextComponent.fromLegacyText(prefix + ChatColor.translateAlternateColorCodes('&', msgaction)));
+
+            String soundName = this.plugin.getConfig().getString("sounds.vanish-on");
+            try {
+                Sound sound = Sound.valueOf(soundName.toUpperCase());
+                player.playSound(player.getLocation(), sound, 1f, 1f);
+            } catch (IllegalArgumentException e) {
+                plugin.getLogger().warning("Invalid sound name in config: " + soundName);
+            }
         }
         return true;
     }

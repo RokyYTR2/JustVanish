@@ -18,11 +18,11 @@ public final class JustVanish extends JavaPlugin {
 
         this.getServer().getPluginManager().registerEvents(new PlayerListener(this.vanishManager), this);
 
-        getLogger().info("JustVanish plugin has been enabled successfully!");
+        getLogger().info("JustVanish has been enabled!");
     }
 
     @Override
     public void onDisable() {
-        getLogger().info("JustVanish plugin has been disabled successfully!");
+        getLogger().info("JustVanish has been disabled!");
     }
 }
