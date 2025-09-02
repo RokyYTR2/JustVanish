@@ -1,0 +1,5 @@
+messages:
+  vanish-on: "&aYou are now invisible."
+  vanish-off: "&aYou are now visible."
+  not-a-player: "&cYou cannot use this command from the console."
+  no-permission: "&cYou do not have permission to use this command."

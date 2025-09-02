@@ -1,0 +1,16 @@
+name: JustVanish
+version: '1.0.0'
+main: dev.meyba.justVanish.JustVanish
+api-version: '1.21'
+authors: [ Meyba._. ]
+description: Just a vanish plugin.
+commands:
+  vanish:
+    description: Allows a player to vanish and reappear.
+    usage: /vanish
+    permission: justvanish.use
+    permission-message: &cYou don't have permission to use this command.
+permissions:
+  justvanish.use:
+    description: Allows a player to use the /vanish command.
+    default: op
