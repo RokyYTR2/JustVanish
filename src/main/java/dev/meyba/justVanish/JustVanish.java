@@ -1,7 +1,6 @@
 package dev.meyba.justVanish;
 
-import dev.meyba.justVanish.commands.ReloadCommand;
-import dev.meyba.justVanish.commands.VanishCommand;
+import dev.meyba.justVanish.commands.Commands;
 import dev.meyba.justVanish.listeners.PlayerListener;
 import dev.meyba.justVanish.managers.VanishManager;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -15,8 +14,7 @@ public final class JustVanish extends JavaPlugin {
 
         this.vanishManager = new VanishManager();
 
-        this.getCommand("vanish").setExecutor(new VanishCommand(this.vanishManager, this));
-        this.getCommand("vanish reload").setExecutor(new ReloadCommand(this));
+        this.getCommand("vanish").setExecutor(new Commands(this.vanishManager, this));
 
         this.getServer().getPluginManager().registerEvents(new PlayerListener(this.vanishManager), this);
 

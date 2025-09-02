@@ -6,19 +6,14 @@ authors: [ Meyba._. ]
 description: Just a vanish plugin.
 commands:
   vanish:
-    description: Allows a player to vanish and reappear.
-    usage: /vanish
+    description: Main command for the JustVanish plugin.
+    usage: /vanish [reload]
     permission: justvanish.use
-    permission-message: &cYou don't have permission to use this command.
-  vanish reload:
-    description: Allows a player to reload justvanish plugin.
-    usage: /vanish reload
-    permission: justvanish.reload
     permission-message: &cYou don't have permission to use this command.
 permissions:
   justvanish.use:
     description: Allows a player to use the /vanish command.
     default: op
   justvanish.reload:
-    description: Allows a player to reload justvanish plugin.
+    description: Allows a player to reload the plugin configuration.
     default: op
