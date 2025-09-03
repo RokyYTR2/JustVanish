@@ -80,9 +80,9 @@ public class Commands implements CommandExecutor, TabCompleter {
             String msg = this.plugin.getConfig().getString("messages.vanish-off");
             player.sendMessage(prefix + ChatColor.translateAlternateColorCodes('&', msg));
 
-            String msgaction = this.plugin.getConfig().getString("actionbar.vanish-off");
+            String msgAction = this.plugin.getConfig().getString("actionbar.vanish-off");
             player.spigot().sendMessage(ChatMessageType.ACTION_BAR,
-                    TextComponent.fromLegacyText(prefix + ChatColor.translateAlternateColorCodes('&', msgaction)));
+                    TextComponent.fromLegacy(prefix + ChatColor.translateAlternateColorCodes('&', msgAction)));
 
             String soundName = this.plugin.getConfig().getString("sounds.vanish-off");
             try {
@@ -101,9 +101,9 @@ public class Commands implements CommandExecutor, TabCompleter {
             String msg = this.plugin.getConfig().getString("messages.vanish-on");
             player.sendMessage(prefix + ChatColor.translateAlternateColorCodes('&', msg));
 
-            String msgaction = this.plugin.getConfig().getString("actionbar.vanish-on");
+            String msgAction = this.plugin.getConfig().getString("actionbar.vanish-on");
             player.spigot().sendMessage(ChatMessageType.ACTION_BAR,
-                    TextComponent.fromLegacyText(prefix + ChatColor.translateAlternateColorCodes('&', msgaction)));
+                    TextComponent.fromLegacy(prefix + ChatColor.translateAlternateColorCodes('&', msgAction)));
 
             String soundName = this.plugin.getConfig().getString("sounds.vanish-on");
             try {
