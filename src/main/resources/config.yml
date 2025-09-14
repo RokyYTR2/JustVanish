@@ -1,14 +1,15 @@
 # =======================
 # JustVanish Config
 # =======================
-
 # Prefix used for all plugin messages
+# =======================
 prefix: "&x&A&2&8&B&5&9&lᴊ&x&A&4&8&D&5&A&lᴜ&x&A&5&8&E&5&C&lꜱ&x&A&7&9&0&5&D&lᴛ&x&A&9&9&1&5&E&lᴠ&x&A&A&9&3&6&0&lᴀ&x&A&C&9&4&6&1&lɴ&x&A&E&9&6&6&2&lɪ&x&A&F&9&7&6&4&lꜱ&x&B&1&9&9&6&5&lʜ &8» &f"
 
 # =======================
 # Messages
 # =======================
 # Messages shown in chat
+# =======================
 messages:
   vanish-on: "&aʏᴏᴜ ᴀʀᴇ ɴᴏᴡ ɪɴᴠɪꜱɪʙʟᴇ." # Message when vanish is enabled
   vanish-off: "&cʏᴏᴜ ᴀʀᴇ ɴᴏᴡ ᴠɪꜱɪʙʟᴇ." # Message when vanish is disabled
@@ -22,6 +23,7 @@ messages:
 # ActionBar Messages
 # =======================
 # Messages shown in the ActionBar when toggling vanish
+# =======================
 actionbar:
   vanish-on: "&aʏᴏᴜ ᴀʀᴇ ɴᴏᴡ ɪɴᴠɪꜱɪʙʟᴇ" # ActionBar message when vanish is enabled
   vanish-off: "&cʏᴏᴜ ᴀʀᴇ ɴᴏᴡ ᴠɪꜱɪʙʟᴇ" # ActionBar message when vanish is disabled
@@ -30,6 +32,7 @@ actionbar:
 # Sounds
 # =======================
 # Sounds that play when toggling vanish
+# =======================
 sounds:
   vanish-on: "ENTITY_EXPERIENCE_ORB_PICKUP" # Sound when vanish is enabled
   vanish-off: "ENTITY_EXPERIENCE_ORB_PICKUP" # Sound when vanish is disabled
