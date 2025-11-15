@@ -10,13 +10,13 @@ public final class JustVanish extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        this.saveDefaultConfig();
+        saveDefaultConfig();
 
-        this.vanishManager = new VanishManager();
+        vanishManager = new VanishManager();
 
-        this.getCommand("vanish").setExecutor(new Commands(this.vanishManager, this));
+        getCommand("vanish").setExecutor(new Commands(vanishManager, this));
 
-        this.getServer().getPluginManager().registerEvents(new PlayerListener(this.vanishManager), this);
+        getServer().getPluginManager().registerEvents(new PlayerListener(vanishManager), this);
 
         getLogger().info("JustVanish has been enabled!");
     }
