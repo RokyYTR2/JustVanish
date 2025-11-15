@@ -6,13 +6,12 @@ import dev.meyba.justVanish.managers.VanishManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class JustVanish extends JavaPlugin {
-    private VanishManager vanishManager;
 
     @Override
     public void onEnable() {
         saveDefaultConfig();
 
-        vanishManager = new VanishManager();
+        VanishManager vanishManager = new VanishManager();
 
         getCommand("vanish").setExecutor(new Commands(vanishManager, this));
 
