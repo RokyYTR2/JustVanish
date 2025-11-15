@@ -2,7 +2,7 @@ name: JustVanish
 version: '0.0.3'
 main: dev.meyba.justVanish.JustVanish
 api-version: '1.21'
-authors: [ Meyba._. ]
+authors: [ Meyba._., Jezevcik20 ]
 description: Just a vanish plugin.
 commands:
   vanish:
