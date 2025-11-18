@@ -42,6 +42,7 @@ public class Commands implements CommandExecutor, TabCompleter {
                     String successMsg = this.plugin.getConfig().getString("messages.reload-success");
                     sender.sendMessage(prefix + ChatColor.translateAlternateColorCodes('&', successMsg));
                     return true;
+
                 case "help":
                     if (!sender.hasPermission("justvanish.help")) {
                         String noPermissionMsg = this.plugin.getConfig().getString("messages.no-permission");
