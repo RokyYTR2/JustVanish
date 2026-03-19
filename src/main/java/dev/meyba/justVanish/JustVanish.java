@@ -3,7 +3,7 @@ package dev.meyba.justVanish;
 import dev.meyba.justVanish.commands.Commands;
 import dev.meyba.justVanish.listeners.PlayerListener;
 import dev.meyba.justVanish.managers.VanishManager;
-import dev.meyba.justVanish.utils.VersionChecker;
+import dev.meyba.justVanish.utils.VersionUtil;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class JustVanish extends JavaPlugin {
@@ -18,7 +18,7 @@ public final class JustVanish extends JavaPlugin {
 
         getServer().getPluginManager().registerEvents(new PlayerListener(vanishManager), this);
 
-        new VersionChecker(this, "RokyYTR2", "JustVanish").checkForUpdates();
+        new VersionUtil(this, "RokyYTR2", "JustVanish").checkForUpdates();
 
         getLogger().info("JustVanish has been enabled!");
     }
